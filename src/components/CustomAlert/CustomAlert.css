@@ -1,0 +1,39 @@
+.closeButton{
+    cursor: pointer;
+}
+
+.timmer-alert{
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap; /*shorthand for flex-direction and flex-wrap. All itens will be on column and each in a single line*/
+    width: 50vw;
+    min-height: 5vh;
+    padding: 2px;
+}
+
+.warning{
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+}
+
+.success{
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.error{
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.closeButton{
+    align-self: flex-end;
+    padding: 4px 4px 0 0;
+}
+
+.alert-message{
+    padding: 10px;
+}
