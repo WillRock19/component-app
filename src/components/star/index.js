@@ -1,1 +1,3 @@
-import Star from "./star";
+import Star from "./Star";
+
+export default Star;

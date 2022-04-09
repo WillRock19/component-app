@@ -1,2 +1,4 @@
-import "./starRating.css";
-import StarRating from "./starRating";
+import "./StarRating.css";
+import StarRating from "./StarRating";
+
+export default StarRating;

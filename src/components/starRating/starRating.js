@@ -1,4 +1,4 @@
-import Star from "../star/star";
+import Star from "../Star";
 import { useState } from "react";
 
 const starIsFilled = (currentRating, starIndex) => {

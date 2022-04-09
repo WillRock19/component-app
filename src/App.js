@@ -1,5 +1,5 @@
 import './App.css';
-import StarRating from './components/starRating/starRating';
+import StarRating from './components/StarRating';
 
 const logCalling = (result) => {
   console.log(result);
