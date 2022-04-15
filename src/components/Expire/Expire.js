@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react"
 
-const Expire = ({expireIn, children}) => {
+const Expire = ({expireIn, children, onExpiringFn}) => {
 
     const [isVisible, setIsVisible] = useState(true);
     const setTimer = (expireIn) => {
-        setTimeout(() => setIsVisible(false), expireIn);
+        setTimeout(() => {
+            setIsVisible(false);
+            onExpiringFn?.();
+        }, expireIn);
     };
 
     useEffect(() => {

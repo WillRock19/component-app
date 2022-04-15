@@ -4,11 +4,15 @@
 
 .timmer-alert{
     border-radius: 5px;
+    border-style: dashed solid;
+    border-width: 0.3em;
     display: flex;
     flex-flow: column wrap; /*shorthand for flex-direction and flex-wrap. All itens will be on column and each in a single line*/
     width: 50vw;
     min-height: 5vh;
     padding: 2px;
+    position: fixed;
+    top: 2vh;
 }
 
 .warning{
@@ -36,4 +40,20 @@
 
 .alert-message{
     padding: 10px;
+}
+
+.animate-alert{
+    animation-duration: 0.5s;
+    animation-name: alert-fade;
+}
+
+@keyframes alert-fade{
+    0% {
+        opacity: 0;
+        top: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
