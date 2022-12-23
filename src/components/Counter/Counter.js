@@ -33,9 +33,9 @@ const initialState = {count: 0};
 const reducerFunction = (prevState, action) => {
     switch(action.type)
     {
-        case 'decrement':
+        case 'DECREMENT':
             return prevState.count === 0 ? initialState : {count: prevState.count - 1};
-        case 'increment':
+        case 'INCREMENT':
             return { count: prevState.count + 1 };
         default: 
             throw new Error('Reducer cannot be executed.');
@@ -49,8 +49,8 @@ export const CounterWithReducer = () => {
         <section className="counter">
             <span>{state.count}</span>
             <div>
-                <button onClick={() => dispatch({ type: 'decrement'})}>-</button>
-                <button onClick={() => dispatch({ type: 'increment'})}>+</button>
+                <button onClick={() => dispatch({ type: 'DECREMENT'})}>-</button>
+                <button onClick={() => dispatch({ type: 'INCREMENT'})}>+</button>
             </div>
         </section>
     );
